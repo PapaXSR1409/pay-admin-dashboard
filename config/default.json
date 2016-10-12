@@ -1,0 +1,50 @@
+{
+  "server": {
+  },
+  "client": {
+    "gitHub": {
+      "accessToken": ""
+    },
+    "jenkins": {
+      "deployParamBuildUrl": "http://localhost:8080/job/${jobName}/parambuild?DEPLOY_TAG=${deployTag}"
+    },
+    "projects": [
+      {
+        "label": "Connector",
+        "name": "pay-connector"
+      },
+      {
+        "label": "Self Service",
+        "name": "pay-selfservice"
+      },
+      {
+        "label": "Public API",
+        "name": "pay-publicapi"
+      },
+      {
+        "label": "Frontend",
+        "name": "pay-frontend"
+      },
+      {
+        "label": "CardId",
+        "name": "pay-cardid"
+      },
+      {
+        "label": "Logger",
+        "name": "pay-logger"
+      },
+      {
+        "label": "Public Auth",
+        "name": "pay-publicauth"
+      }
+    ],
+    "tagCategories": {
+      "integration": "alpha_release",
+      "integrationApproved": "approved-alpha_release",
+      "staging": "alpha_staging-1",
+      "stagingApproved": "approved-alpha_staging-1",
+      "production": "alpha_production-1"
+    },
+    "productionCutOff": 5
+  }
+}
