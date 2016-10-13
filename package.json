@@ -1,0 +1,47 @@
+{
+  "name": "pay-admin-dashboard",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphagov/pay-admin-dashboard"
+  },
+  "author": "Christophe Kalista",
+  "dependencies": {
+    "babel-core": "~6.5.1",
+    "babel-loader": "~6.2.2",
+    "babel-preset-es2015": "~6.5.0",
+    "babel-preset-react": "~6.5.0",
+    "body-parser": "^1.14.0",
+    "bower": "^1.7.7",
+    "config": "^1.21.0",
+    "consolidate": "^0.13.1",
+    "express": "^4.13.3",
+    "handlebars": "^4.0.3",
+    "jquery": "^3.1.1",
+    "jsx-loader": "^0.13.2",
+    "lodash": "^4.16.2",
+    "moment": "^2.15.1",
+    "octokat": "^0.4.18",
+    "react": "~15.3.2",
+    "react-bootstrap": "^0.30.5",
+    "react-copy-to-clipboard": "^4.2.3",
+    "react-countdown-clock": "^1.0.9",
+    "react-dom": "^15.3.2",
+    "react-hot-api": "^0.5.0",
+    "react-toastr": "^2.8.1",
+    "react-toggle-button": "^2.1.0",
+    "restful.js": "^0.9.6",
+    "webpack": "^1.12.13"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "react-hot-loader": "~1.3.0",
+    "style-loader": "^0.13.0",
+    "webpack-dev-server": "~1.14.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "webpack-dev-server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --port 8181"
+  }
+}
