@@ -9,9 +9,9 @@ https://pay-admin-dashboard.herokuapp.com/
 #### Getting started
 
 1. Install the project dependencies: `npm install`
-2. Open a terminal and execute `export NODE_CONFIG NODE_CONFIG='{"client": {"gitHub": {"accessToken": "XXXXXXXXXXXXXXXXXXXXXXXXc2XXXXeaXXXX9XX"}, "jenkins": {"deployParamBuildUrl": "https://deploy.deploy.payments.service.gov.uk/job/${jobName}/parambuild?DEPLOY_TAG=${deployTag}"}}}'`
+2. Open a terminal and execute `export NODE_CONFIG NODE_CONFIG='{"client": {"gitHub": {"accessToken": "XXXXXXXXXXXXXXXXXXXXXXXXc2XXXXeaXXXX9XX"}, "jenkins": {"deployParamBuildUrl": "https://deploy.deploy.payments.service.gov.uk/job/${jobName}/parambuild?DEPLOY_TAG=${deployTag}"}}}'`. Please substitute XXXX with actual accessToken value
 3. Launch the application: `npm start`
-4. Point your browser to [http://localhost:8000](http://localhost:8000) 
+4. Point your browser to [http://localhost:8000](http://localhost:8000)
 
 #### For development
 
@@ -23,7 +23,7 @@ https://pay-admin-dashboard.herokuapp.com/
 <script src="/dist/js/app.bundle.js"></script>
 ```
 
-change this to: 
+change this to:
 
 ```html
 <script src="http://localhost:8181/dist/js/vendors.js"></script>
