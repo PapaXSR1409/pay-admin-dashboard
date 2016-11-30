@@ -154,6 +154,15 @@ define(
             var extendWithPullRequestDetails = tag => {
               var match = tag.commit.message.match(new RegExp('^Merge pull request \#(.*) from'));
 
+              if (!match) return _.extend({}, tag, {
+                pullRequest: {
+                  userName: "N/A",
+                  userAvatar: "",
+                  url: "",
+                  body: "N/A"
+                }
+              });
+
               return getApiFor(tag.project.name).pulls(match[1]).fetch().then(pullRequestData => {
                 return _.extend({}, tag, {
                   pullRequest: {
