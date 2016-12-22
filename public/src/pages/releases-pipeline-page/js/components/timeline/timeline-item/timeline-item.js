@@ -36,6 +36,7 @@ define(
 					        </span>
 
               <TimelineHeader url={this.props.header.url} title={this.props.header.title}
+                              avatar={this.props.header.avatar}
                               author={this.props.header.author}/>
 
               {body}
