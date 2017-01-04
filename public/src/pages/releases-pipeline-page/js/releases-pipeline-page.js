@@ -24,7 +24,8 @@ define(
         return {
           url: tag.pullRequest.url,
           title: `#${tag.version} ${tag.project.label} `,
-          author: tag.pullRequest.userName
+          author: tag.pullRequest.userName,
+          avatar:tag.pullRequest.userAvatar,
         }
       },
 
