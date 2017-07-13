@@ -5,6 +5,10 @@
     "type": "git",
     "url": "https://github.com/alphagov/pay-admin-dashboard"
   },
+  "license": "MIT",
+  "engines": {
+    "node": "6.11.1"
+  },
   "author": "Christophe Kalista",
   "dependencies": {
     "babel-core": "~6.5.1",
