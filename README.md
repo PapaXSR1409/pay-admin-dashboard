@@ -6,14 +6,14 @@ Pay Admin Dashboard shows all environments in the deployment pipeline, which art
 
 https://pay-admin-dashboard.herokuapp.com/
 
-#### Getting started
+## Getting started
 
 1. Install the project dependencies: `npm install`
 2. Open a terminal and execute `export NODE_CONFIG NODE_CONFIG='{"client": {"gitHub": {"accessToken": "XXXXXXXXXXXXXXXXXXXXXXXXc2XXXXeaXXXX9XX"}, "jenkins": {"deployParamBuildUrl": "https://deploy.deploy.payments.service.gov.uk/job/${jobName}/parambuild?DEPLOY_TAG=${deployTag}"}}}'` Please replace 'XXX' with actual accessToken.
 3. Launch the application: `npm start`
 4. Point your browser to [http://localhost:8000](http://localhost:8000)
 
-#### For development
+## For development
 
 - React Hot Loader can be used to ease your development workflow: `npm run webpack-dev-server`  
 - Then in your HTML, change your 'javascript bundles' source paths to point to the webpack-dev-server proxy in your `script` tags. So if you have something like the following:
@@ -30,4 +30,13 @@ change this to:
 <script src="http://localhost:8181/dist/js/app.bundle.js"></script>
 ```
 
-## Note: `Remember to revert the script source changes when done with development for pushing changes for code review.`
+Note: `Remember to revert the script source changes when done with development for pushing changes for code review.`
+
+
+## Licence
+
+[MIT License](LICENSE)
+
+## Responsible Disclosure
+
+GOV.UK Pay aims to stay secure for everyone. If you are a security researcher and have discovered a security vulnerability in this code, we appreciate your help in disclosing it to us in a responsible manner. We will give appropriate credit to those reporting confirmed issues. Please e-mail gds-team-pay-security@digital.cabinet-office.gov.uk with details of any issue you find, we aim to reply quickly.
